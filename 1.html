@@ -3,7 +3,52 @@
     <head>
         <title>WEB1 - html</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+              margin: 0;
+            }
+            /*선택자*/
+            /* tag < class < id */
+            /* 동등하다면 마지막에 등장하는게 우선 */
+            a {
+                color:rgb(0, 0, 0);
+               text-decoration: none;
+            }
+            h1 {
+               font-size: xxx-large;
+               text-align: center;
+               border-bottom: 1px solid grey;
+               margin: 0;
+                padding: 20px;
+            }
+            ol {
+                border-right: 1px solid grey;
+                width: 120px;
+                margin: 0;
+                padding: 20px;
+            }
+            #grid {
+               display: grid;
+               grid-template-columns: 200px 1fr;
+            }
+            #grid ol {
+              padding-left: 33px;
+            }
+            #grid #article {
+
+            }
+            @media(max-width: 1000px) {
+               #grid {
+                display: block;
+            }
+            ol {
+               border-right: none;
+            }
+            h1 {
+                border-bottom: none;
+            }
+            }   
+        </style>
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
